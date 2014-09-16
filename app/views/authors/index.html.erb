@@ -1,0 +1,15 @@
+<table>
+  <% @authors.each do |author| %>
+    <tr>
+      <td>
+        <%= author.name %>
+      </td>
+      <td>
+        <%= author.age %>
+      </td>
+      <td>
+        <%= author.gender %>
+      </td>
+    </tr>
+  <% end %>
+</table>
