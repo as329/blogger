@@ -1,6 +1,16 @@
-<ul>
-  <!-- My Comment -->
-  <% @articles.each do |key, value| %>
-    <li><%= value %></li>
+<table class="table table-stripped">
+  <thead>
+    <tr>
+      <td>Title</td>
+      <td>Content</td>
+    </tr>
+  </thead>
+  <tbody>
+  <% @articles.each do |article| %>
+    <tr>
+      <td><strong><%= article.title %></strong></td>
+      <td><%= article.content %></td>
+    </tr>
   <% end %>
-</ul>
+  </tbody>
+</table>

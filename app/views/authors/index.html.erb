@@ -1,4 +1,12 @@
-<table>
+<table class="table table-stripped">
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Age</td>
+      <td>Gender</td>
+    </tr>
+  </thead>
+  <tbody>
   <% @authors.each do |author| %>
     <tr>
       <td>
@@ -12,4 +20,5 @@
       </td>
     </tr>
   <% end %>
+  </tbody>
 </table>
